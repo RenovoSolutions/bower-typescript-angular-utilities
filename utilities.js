@@ -53,7 +53,7 @@ this["rl-utilities"] =
 	exports.filters = filters;
 	var services = __webpack_require__(11);
 	exports.services = services;
-	var types = __webpack_require__(43);
+	var types = __webpack_require__(38);
 	exports.types = types;
 	exports.name = 'rl.utilities';
 	angular.module(exports.name, [
@@ -404,7 +404,7 @@ this["rl-utilities"] =
 	exports.test = test;
 	var time = __webpack_require__(18);
 	exports.time = time;
-	var validation = __webpack_require__(42);
+	var validation = __webpack_require__(37);
 	exports.validation = validation;
 	exports.name = 'rl.utilities.services';
 	angular.module(exports.name, [
@@ -1298,9 +1298,7 @@ this["rl-utilities"] =
 	var angular = __webpack_require__(1);
 	var mock = __webpack_require__(35);
 	exports.mock = mock;
-	var karma = __webpack_require__(36);
-	exports.karma = karma;
-	__export(__webpack_require__(41));
+	__export(__webpack_require__(36));
 	exports.moduleName = 'rl.utilities.services.test';
 	angular.module(exports.moduleName, [
 	    mock.moduleName,
@@ -1398,136 +1396,6 @@ this["rl-utilities"] =
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var debug = __webpack_require__(37);
-	exports.debug = debug;
-	var defaultConfig = __webpack_require__(38);
-	exports.standard = defaultConfig;
-	var full = __webpack_require__(39);
-	exports.full = full;
-	var teamCity = __webpack_require__(40);
-	exports.tc = teamCity;
-	//# sourceMappingURL=karma.js.map
-
-/***/ },
-/* 37 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// Karma configuration
-	var default_config_1 = __webpack_require__(38);
-	function default_1(karma) {
-	    var options = default_config_1.default(karma);
-	    options.singleRun = false;
-	    karma.set(options);
-	    return options;
-	}
-	Object.defineProperty(exports, "__esModule", { value: true });
-	exports.default = default_1;
-	//# sourceMappingURL=debug.config.js.map
-
-/***/ },
-/* 38 */
-/***/ function(module, exports) {
-
-	// Default karma configuration
-	function default_1(karma) {
-	    var options = {
-	        // frameworks to use
-	        // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-	        frameworks: ['mocha', 'chai', 'sinon'],
-	        // enable / disable watching file and executing tests whenever any file changes
-	        autoWatch: false,
-	        // Continuous Integration mode
-	        // if true, Karma captures browsers, runs the tests and exits
-	        singleRun: true,
-	        // level of logging
-	        // possible values: karma.LOG_DISABLE || karma.LOG_ERROR || karma.LOG_WARN || karma.LOG_INFO || karma.LOG_DEBUG
-	        logLevel: karma.LOG_INFO,
-	        // start these browsers
-	        // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-	        browsers: ['Chrome'],
-	        // test results reporter to use
-	        // possible values: 'dots', 'progress'
-	        // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-	        reporters: ['progress'],
-	        // enable / disable colors in the output (reporters and logs)
-	        colors: true,
-	        files: [
-	            'test-bootstrapper.js',
-	        ],
-	        preprocessors: {
-	            // add webpack as preprocessor
-	            'test-bootstrapper.js': ['webpack'],
-	        },
-	        webpack: {
-	            devtool: 'inline-source-map',
-	            module: {
-	                loaders: [
-	                    {
-	                        test: /\.ts$/,
-	                        exclude: /node_modules/,
-	                        loader: 'ts-loader',
-	                    },
-	                ],
-	            },
-	            resolve: {
-	                extensions: ['', '.webpack.js', '.web.js', '.js', '.ts'],
-	            },
-	        },
-	        plugins: [
-	            'karma-webpack',
-	            'karma-mocha',
-	            'karma-chai',
-	            'karma-sinon',
-	            'karma-chrome-launcher',
-	            'karma-firefox-launcher',
-	            'karma-ie-launcher',
-	        ]
-	    };
-	    karma.set(options);
-	    return options;
-	}
-	Object.defineProperty(exports, "__esModule", { value: true });
-	exports.default = default_1;
-	;
-	//# sourceMappingURL=default.config.js.map
-
-/***/ },
-/* 39 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// Karma configuration
-	var default_config_1 = __webpack_require__(38);
-	function default_1(karma) {
-	    var options = default_config_1.default(karma);
-	    options.browsers = ['Chrome', 'Firefox', 'IE'];
-	    karma.set(options);
-	    return options;
-	}
-	Object.defineProperty(exports, "__esModule", { value: true });
-	exports.default = default_1;
-	//# sourceMappingURL=full.config.js.map
-
-/***/ },
-/* 40 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// Karma configuration
-	var full_config_1 = __webpack_require__(39);
-	function default_1(karma) {
-	    var options = full_config_1.default(karma);
-	    options.reporters = ['teamcity'];
-	    karma.set(options);
-	    return options;
-	}
-	Object.defineProperty(exports, "__esModule", { value: true });
-	exports.default = default_1;
-	//# sourceMappingURL=teamCity.config.js.map
-
-/***/ },
-/* 41 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
 	var angular = __webpack_require__(1);
 	__webpack_require__(1);
 	var _ = __webpack_require__(7);
@@ -1597,7 +1465,7 @@ this["rl-utilities"] =
 	//# sourceMappingURL=angularFixture.js.map
 
 /***/ },
-/* 42 */
+/* 37 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1666,7 +1534,7 @@ this["rl-utilities"] =
 	//# sourceMappingURL=validation.service.js.map
 
 /***/ },
-/* 43 */
+/* 38 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
