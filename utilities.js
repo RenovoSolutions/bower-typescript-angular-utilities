@@ -1,4 +1,4 @@
-this["rl-utilities"] =
+this["rl_utilities"] =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
